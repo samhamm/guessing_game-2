@@ -1,18 +1,20 @@
 <script>
 
-var guess, answer, message;
+var guess, answer, message, user;
 
 answer = 6;
 console.log(answer);
 
-guess = prompt('How many World of Warcraft games have been released including expansions?');
+user = prompt('What is your name?');
 
-if(guess == answer){
-	message = "Looks like we have a fellow WoW addict here, you got it right!"
-} else{
-	message = "Your knowledge of World of Warcraft is pitiful at best, there are 6 titles including expansions and the original"
-}
+guess = prompt('Hey ' + user + ' how many World of Warcraft games have been released including expansions?');
 
-alert(message);
+while(guess != answer) {
+
+	guess = prompt('Your knowledge of World of Warcraft is pitiful at best, try again!');
+	}
+
+
+alert('Looks like we have a fellow WoW addict here, you got it right!');
 
 </script>
